@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="booked-list">
+        <h3>Booked Movies</h3>
+        <ul>
+            <li>Movie Name</li>
+        </ul>
+    </div>
+
+    <div class="navbar">
+        <img src="logo.svg" alt="">
+        <i class="fa-solid fa-magnifying-glass"></i><input type="search" class="search" placeholder="Movie or theater">
+        <div class="links">
+            <a href="movies.html" target="_blank">Movies</a>
+            <a href="">Theaters</a>
+            <a id="my-bookings" target="_blank"
+                style="background-color: #1e1e1e; color: white; padding: 7px; border-radius: 8px; cursor: pointer;">My
+                Movies</a>
+            <a href="" onclick="logout()">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Now Playing</h3>
+        <div class="movies">
+            <img src="/thumbnails/1.jpg" alt="" class="img">
+            <img src="/thumbnails/2.jpg" alt="" class="img">
+            <img src="/thumbnails/3.jpg" alt="" class="img">
+            <img src="/thumbnails/4.jpg" alt="" class="img">
+            <img src="/thumbnails/5.jpg" alt="" class="img">
+            <div class="names">
+                <h5>Avengers</h5>
+                <h5>Black Panther</h5>
+                <h5>Multiverse</h5>
+                <h5>Godzilla</h5>
+                <h5>Guardians of galaxy</h5>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <br><br>
+    <div class="movies1">
+        <h3>OPENING THIS WEEK</h3>
+        <div class="movies">O
+            <img src="/thumbnails/7.jpg" alt="" class="img">
+            <img src="/thumbnails/8.jpg" alt="" class="img">
+            <img src="/thumbnails/9.jpg" alt="" class="img">
+            <img src="/thumbnails/10.jpg" alt="" class="img">
+            <img src="/thumbnails/11.jpg" alt="" class="img">
+            <div class="names">
+                <h5>Jumanji</h5>
+                <h5>Kong Skull Island</h5>
+                <h5>SPIDERMAN</h5>
+                <h5>BATMAN</h5>
+                <h5>The Grinch</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="book" id="book">
+        <form>
+            <label for="name">Movie Name</label> <br>
+            <input type="text" id="movie-namee" name="movie-name" placeholder="Movie name..."><br>
+            <label for="name">Full Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="Your full name..."><br>
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" placeholder="Your email..."> <br>
+            <button type="button" id="btn-book">Book now</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

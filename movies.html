@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #1e1e1e;">
+
+    <div class="navbar">
+        <img src="logo.svg" alt="">
+        <i class="fa-solid fa-magnifying-glass"></i><input type="search" class="search" placeholder="Search a movie...">
+        <div class="links">
+            <a href="">Movies</a>
+            <a href="">Theaters</a>
+        </div>
+    </div>
+
+    <div class="movie">
+        <h4>Avengers - Infinity War</h4>
+        <iframe src="https://www.youtube.com/embed/QwievZ1Tx-8" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        <h4>Actors and their role</h4>
+        <div class="actors">
+            <div class="actor">
+                <img src="/actors/avengers1.jpeg" alt="">
+                <h3>Robert Downey Jr. <span>(Iron Man)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/avengers2.jpeg" alt="">
+                <h3>Josh Brolin <span>(Thanos)</span></h3>
+            </div>
+            6 <div class="actor">
+                <img src="/actors/avengers3.jpeg" alt="">
+                <h3>Chris Hemsworth <span>(Thor)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/avengers5.jpeg" alt="">
+                <h3>Chris Evans <span>(C. America)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/avengers6.jpeg" alt="">
+                <h3>Tom Holland <span>(Spider-Man)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/avengers7.jpeg" alt="">
+                <h3>Mark Ruffalo <span>(Hulk)</span></h3>
+            </div>
+        </div>
+        <button class="btn" id="btn">Book this movie</button>
+        <form action="https://formspree.io/f/xyyagove" method="POST" id="form" class="form">
+            <label for="movie-name">Movie Name</label><br>
+            <input type="text" name="movie-name" id="movie-name" placeholder="Movie Name" required><br>
+            <label for="your-name">Your Name</label><br>
+            <input type="text" name="your-name" id="your-name" placeholder="Your Name" required><br>
+            <label for="email">Your Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Your Email" required><br>
+            <button type="submit">Book</button>
+        </form>
+    </div>
+    <hr>
+    <div class="movie">
+        <h4>Black Panther - Long Live The King</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xjDjIWPwcPU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <h4>Actors and their role</h4>
+        <div class="actors">
+            <div class="actor">
+                <img src="/actors/panther1.jpeg" alt="">
+                <h3>Chadwick Boseman <span>(Black Panther)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/panther2.jpeg" alt="">
+                <h3>Michael B. Jordan <span>(Erik Killmonger)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/panther3.jpeg" alt="">
+                <h3>Winston Duke <span>(M'Baku)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/panther5.jpeg" alt="">
+                <h3>Dainel Kaluuya<span>(W'Kabi)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/panther6.jpeg" alt="">
+                <h3>Martin Freeman <span>(Everett K. Ross)</span></h3>
+            </div>
+            <div class="actor">
+                <img src="/actors/panther7.jpeg" alt="">
+                <h3>Forest Whitaker<span>(Zuri)</span></h3>
+            </div>
+        </div>
+        <button class="btn" id="btn1">Book this movie</button>
+        <form action="https://formspree.io/f/xyyagove" method="POST" id="form1" class="form">
+            <label for="movie-name">Movie Name</label><br>
+            <input type="text" name="Movie Name" id="movie-name1" placeholder="Movie Name" required><br>
+            <label for="your-name">Your Name</label><br>
+            <input type="text" name="Your Name" id="your-name" placeholder="Your Name" required><br>
+            <label for="email">Your Email</label><br>
+            <input type="email" name="Email" id="email" placeholder="Your Email" required><br>
+            <button type="submit">Book</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

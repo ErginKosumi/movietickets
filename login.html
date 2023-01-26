@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <form id="login-form">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="button" value="Log In" onclick="login()">
+    </form>
+
+    <script>
+        function login() {
+            // Get the email and password values from the form
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Get the email and password values from local storage
+            var storedEmail = localStorage.getItem("email");
+            var storedPassword = localStorage.getItem("password");
+
+            // Check if the email and password match the values in local storage
+            if (email === storedEmail && password === storedPassword) {
+                // If the email and password match, redirect the user to the home page
+                window.location.href = '/index.html';
+            } else {
+                // If the email and password do not match, display an error message
+                alert("The email or password is incorrect. Please try again.");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
